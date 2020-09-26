@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% block contents %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'page2.css' %}">
+  </head>
+  <body>
+    <span id=title1>
+      종합건설업등록/신고안내
+    </span>
+    <span id=title2>
+      | 건설업등록안내
+    </span>
+    <div id=menu>
+      <ul>
+        <li><a href="#" class=menulink id=click>등록절차</a></li>
+        <li><a href="#" class=menulink>등록기준</a></li>
+        <li><a href="#" class=menulink>유의사항</a></li>
+        <li><a href="#" class=menulink>작성요령</a></li>
+        <li><a href="#" class=menulink>기타사항</a></li>
+      </ul>
+    </div>
+    <div class="">
+      <p>| 건설업 등록절차</p>
+    </div>
+    <div id=box>
+      <div class="정렬">
+        <div id=left>
+          <img src="{% static '등록절차_1.png' %}" alt="신청인" align="middle">
+        </div>
+        <div id=left>
+          <div class=text1><br><br><br>- 신고서 작성<br></div>
+          <div class=text2>(건산법 제 2호, 별지 1호 서식 등 첨부 서식)</div>
+        </div>
+      </div>
+      <div class="정렬">
+        <div id=left>
+          <img src="{% static '등록절차_2.png' %}" alt="협회">
+        </div>
+        <div class=text1><br>- 서면심사</div>
+        <div class=text2>(등록기준보유, 첨부서류, 수수료)</div>
+        <div class=text1><br>- 기업진단 및 실제확인</div>
+        <div class=text2>(부실업체(자본잠식 등), 신규법인 실제확인 등에 대하여는 필요 시 진단실시 및 실제 확인)</div>
+      </div>
+      <div class="정렬">
+        <div id=left>
+          <img src="{% static '등록절차_3.png' %}" alt="시도청">
+        </div>
+        <div id=left>
+          <div class=text1><br><br><br>- 정보통신망에 게재, 등록대장 작성 보관</div>
+          <div class=text1><br>- 등록증 및 등록수첩 교부</div>
+        </div>
+      </div>
+    </div>
+
+    {% endblock %}

@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% block contents %}
+
+{% if post %}
+
+        
+        <div class="board">
+            <table>
+                <colgroup>
+                    <col style="width:50px;">
+                    <col>
+                    <col style="width:90px;">
+                    <col style="width:90px;">
+                    <col style="width:50px;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">번호</th>
+                        <th scope="col">제목</th>
+                        <th scope="col">담당부서</th>
+                        <th scope="col">등록일</th>
+                        <th scope="col">조회수</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>
+                            {{post.id}}
+                            <!-- <em>[공지]</em> -->
+                        </td>
+                        <td>
+                            <strong>{{post.title}}</strong>
+                        </td>
+                        <td>
+                            {{post.department}}
+                        </td>
+                        <td>
+                            {{post.pub_date}}
+                        </td>
+                        <td>
+                            {{post.views}}
+                        </td>
+                    </tr>
+                    
+                </tbody>
+
+                
+            </table>
+        </div>
+        <!-- <div>
+            다음글<a href="{% url 'detail' nextpostid %}">{{post.title}}</a>
+        </div>
+        <div>
+            이전글<a href="{% url 'detail' prevpostid %}">{{post.title}}</a>
+        </div> -->
+        <a href="{% url 'notice' %}"><button>목록</button></a>
+        
+        {% endif %}
+        
+        
+        
+    
+{% endblock %}

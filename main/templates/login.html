@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block contents %}
+        <div>login.html</div>
+        <section class="login">
+            <h2>로그인</h2>
+            <h4>대한건설협회에 오신 것을 환영합니다.</h4>
+            <ul>
+                <form method="POST" action="{% url 'login' %}" class="form-signin">
+                    {% csrf_token %}
+                    <li>&nbsp;<input type="text" placeholder="아이디" name="id" class="form-control"></li>
+                    <li>&nbsp;<input type="password" placeholder="비밀번호" name="password" class="form-control"></li>
+                    
+                    <div style="margin: 0 0 0 30px; color: red;" class="messages">
+                        {% if messages %}
+                        {% for message in messages %}
+                        {{message.message}}
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+
+                    <li><button type="submit" class="btn btn-lg btn-primary btn-block">Sign in</button></li>
+                    
+                </form>
+            </ul>
+            <div style="text-align: center;">
+                <ul>
+                    <li><a href="{% url 'signup' %}">계정 생성</a></li>
+                </ul>
+            </div>
+        </section>
+{% endblock %}

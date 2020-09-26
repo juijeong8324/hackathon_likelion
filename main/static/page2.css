@@ -1,0 +1,71 @@
+#title1 {
+  font-size: 25px;
+}
+
+#title2 {
+  color: gray;
+  padding: 0 0 0 7px;
+}
+
+#menu {
+  height: 30px;
+  width: 850px;
+  
+}
+
+#menu ul li {
+  list-style:none;
+  color:white;
+  background-color:#ffc35b;
+  float: left;
+  line-height: 35px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#click{
+  color:white;
+  font-weight: bold;
+  background-color: #ffa100;
+}
+
+#menu .menulink {
+  text-decoration: none;
+  color: white;
+  display: block;
+  width: 150px;
+  font-size: 14px;
+}
+
+
+#menu .menulink:hover {
+  color: white;
+  background-color: #ffc35b;
+}
+
+#box{
+  width: 700px;
+  height: 600px;
+  border: 5px solid lightgray;
+  margin: 10 10 10 10;
+}
+
+#left{
+  float:left;
+  margin-right:50px;
+  align="middle";
+}
+
+.정렬{
+  float:left;
+  align="middle";
+}
+
+.text1{
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.text2{
+  color: gray;
+}

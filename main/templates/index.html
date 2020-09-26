@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% block contents %}
+
+        
+
+    <div class="button_area">
+        <div class="button_array_box">
+            <div class="button_array">
+                <button class="go_button">
+                    <h4>증명서 발급</h4>
+                    <h5>빠른 시일 내에 가능</h5>
+                </button>
+            </div>
+            <div class="button_array">
+                <button class="go_button">
+                    <h4>실적 신고</h4>
+                    <h5>달마다 편하게 실적 신고</h5>
+                </button>
+            </div>
+            <div class="button_array">
+                
+            </div>
+            <div class="button_array">
+                
+            </div>
+            <div class="button_array">
+                <button class="go_button">
+                    <h4>교육 / 채용</h4>
+                    <h5>배움과 취업을 동시에</h5>
+                </button>
+            </div>
+            <div class="button_array">
+                <button class="go_button">
+                    <h4>업체 정보</h4>
+                    <h5>원하는 업체와 컨택</h5>
+                    </button>
+            </div>
+            <div class="button_array">
+                <button class="go_button">
+                    <h4>빠른 신고</h4>
+                    <h5>불공정행위 신고센터</h5>
+                    </button>
+            </div>
+            <div class="button_array">
+                <button class="go_button">
+                    <h4>세금계산서</h4>
+                    <h5>정확한 전문적 분석</h5>
+                </button>
+            </div>
+            <div class="button_array">
+                
+            </div>
+            
+        </div>
+    </div>
+            
+    <section class="main_event">
+        <div class="main_event_container">
+                <div>
+                    {% load static %}
+                    <img src="{% static 'mainpage1.jpg' %}" alt="">
+                </div>
+                <div><img src="{% static 'mainpage2.jpg' %}"></div>
+                <div><img src="{% static 'mainpage3.jpg' %}">
+                    <button class="more_button">자세히 보기</button>
+                </div>
+        </div>
+        
+    </section>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $('.main_event_container').slick({
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        dots: true,
+        prevArrow: false,
+        nextArrow: false,
+    });
+    </script>
+
+
+
+{% endblock %}
